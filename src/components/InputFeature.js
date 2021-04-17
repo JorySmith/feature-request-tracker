@@ -13,7 +13,7 @@ const InputFeature = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       })
-      window.location = 'https://jorysmith.github.io/feature-request-tracker/'
+      window.location = '/feature-request-tracker'
     } catch (err) {
       console.error(err.message)
     }
