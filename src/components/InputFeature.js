@@ -14,7 +14,7 @@ const InputFeature = () => {
         body: JSON.stringify(body)
       })
       e.preventDefault();
-      // window.location = '/'
+      window.location = '/feature-request-tracker'
     } catch (err) {
       console.error(err.message)
     }
