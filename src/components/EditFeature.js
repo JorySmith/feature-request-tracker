@@ -33,7 +33,7 @@ const EditFeature = ({ feature }) => {
               <button type="button" className="close btn btn-lg" data-dismiss="modal" onClick={() => setDescription(feature.description)}>&times;</button>
             </div>
             <div className="modal-body">
-              <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)} />
+              <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))} />
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-success" data-dismiss="modal" onClick={e => updateDescription(e)}>Update</button>

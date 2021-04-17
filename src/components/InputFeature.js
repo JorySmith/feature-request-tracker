@@ -21,10 +21,9 @@ const InputFeature = () => {
 
   return (
     <Fragment>
-      <h1 className="text-center mt-5">Feature Request Tracker</h1>
-      <h3 className="text-center mt-1">A React CRUD App</h3>
+      <h2 className="text-center mt-3">Feature Request Tracker</h2>
       <form className="d-flex mt-5" onSubmit={onSubmitForm}>
-        <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)} />
+        <input type="text" className="form-control" placeholder="Add a new feature request" value={description} onChange={e => setDescription(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))} />
         <button className="btn btn-success">Add</button>
       </form>
     </Fragment>

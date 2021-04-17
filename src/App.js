@@ -1,16 +1,25 @@
 import React, { Fragment } from 'react';
-import './App.css';
 
 // Components
+import Menu from "./components/Menu"
 import InputFeature from "./components/InputFeature"
 import ListFeature from "./components/ListFeature"
+
 
 function App() {
   return (
     <Fragment>
+
       <div className="container">
-        <InputFeature />
-        <ListFeature />
+
+        <div className="menu">
+          <Menu />
+        </div>
+        <div className="tracker">
+          <InputFeature />
+          <ListFeature />
+        </div>
+
       </div>
 
     </Fragment>
