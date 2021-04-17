@@ -13,6 +13,7 @@ const InputFeature = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       })
+      e.preventDefault();
       // window.location = '/'
     } catch (err) {
       console.error(err.message)
