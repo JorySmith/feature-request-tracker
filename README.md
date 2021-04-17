@@ -1,5 +1,5 @@
 # feature-request-tracker
-A React CRUD app that displays user generated website feature requests.
+A React CRUD application that displays user generated feature requests.
 
 Built with React, Node, Express, PostgreSQL, JavaScript, Bootstrap, HTML5, and CSS3.
 
