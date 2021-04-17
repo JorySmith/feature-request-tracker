@@ -8,7 +8,7 @@ const InputFeature = () => {
     e.preventDefault();
     try {
       const body = { description }
-      const response = await fetch("http://localhost:5000/features", {
+      const response = await fetch("https://feature-request-tracker-api.herokuapp.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)

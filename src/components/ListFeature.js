@@ -9,7 +9,7 @@ const ListFeature = () => {
   // delete feature request
   const deleteFeature = async (id) => {
     try {
-      const deleteFeature = await fetch(`http://localhost:5000/features/${id}`, {
+      const deleteFeature = await fetch(`https://feature-request-tracker-api.herokuapp.com/${id}`, {
         method: "DELETE"
       })
       setFeatures(features.filter(feature => feature.feature_id !== id))
@@ -20,10 +20,9 @@ const ListFeature = () => {
 
   const getFeatures = async () => {
     try {
-      const response = await fetch("http://localhost:5000/features")
+      const response = await fetch("https://feature-request-tracker-api.herokuapp.com/")
       const data = await response.json()
       setFeatures(data)
-
 
     } catch (err) {
       console.error(err.message)

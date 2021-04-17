@@ -10,7 +10,7 @@ const EditFeature = ({ feature }) => {
     e.preventDefault()
     try {
       const body = { description }
-      const response = await fetch(`http://localhost:5000/features/${feature.feature_id}`, {
+      const response = await fetch(`https://feature-request-tracker-api.herokuapp.com/${feature.feature_id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
